@@ -127,6 +127,19 @@ This is useful when following a long-running log because the column names remain
 
 ### Translation Output
 
+The translated output presents each STC status record as a **human-readable, column-aligned table**, making the tracker's operating state, Sun position, axis positions, electrical measurements, status flags, sensor values, errors, and offsets easier to interpret.
+
+**For example:**
+
+```text
+LOCALTIME(SLT)      CID    STATE              SUN_AZ SUN_EL AZPOS ELPOS AZNEXT ELNEXT VOLT(DC) PEAKCUR(A) AVGCUR(A) TEMP      W E U D TE TS STOWED STOWING LOCK ESTOP AZHOMED ELHOMED SOLCAL VERT DEG30 ERRORS SUNE SUNW SUNU SUND WNDNOW WNDPEAK ELSTALLS AZSTOW AZOFFSET ELOFFSET
+2026-05-14 09:17:51 120431 TRACKING           118.42 34.27  14261 1847  14274  1849   27.6     7.2        0.6       31C(88F)  - - - - X  X  -      -       -    -     X       X       X      -    -     0      94   161  172  351  0      0       0        0      6021     918
+2026-05-14 09:18:24 120431 TRACKING           118.61 34.33  14261 1847  14286  1851   27.8     4.1        0.4       31C(88F)  - - - - X  X  -      -       -    -     X       X       X      -    -     0      94   161  172  353  0      0       0        0      6021     918
+2026-05-14 09:19:24 120431 TRACKING           118.94 34.44  14261 1847  14307  1855   27.9    86.7        0.5       32C(90F)  - - - - X  X  -      -       -    -     X       X       X      -    -     0      94   161  172  352  2      2       0        0      6021     918
+2026-05-14 09:20:25 120431 TRACKING           119.28 34.55  14261 1847  14328  1859   28.0    89.4        0.5       32C(90F)  - - - - X  X  -      -       -    -     X       X       X      -    -     0      94   162  172  351  1      2       0        0      6021     918
+2026-05-14 09:20:31 120431 TRACKING           119.31 34.56  14261 1848  14332  1860   27.7    11.3        1.6       32C(90F)  - - - - X  X  -      -       -    -     X       X       X      -    -     0      94   162  172  352  0      0       0        0      6021     918
+```
+
 The translated output includes fields such as:
 
     TIME
