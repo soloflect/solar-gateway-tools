@@ -2,7 +2,7 @@
 
 Tools for maintaining, archiving, translating, and analyzing logs from Solaflect solar tracking Gateway devices.
 
-A Gateway is a Raspberry Pi 4B running the Solaflect Stratosphere software. The Gateway communicates with an STC (Solar Tracking Controller), a separate controller board containing a PIC32 microcontroller. The STC controls the two-axis solar tracker and is responsible for tracking the Sun.
+A Gateway is a Raspberry Pi 4B running the Solaflect Stratosphere software. The Gateway communicates with an STC (Solar Tracking Controller), a separate controller board containing a PIC32MX795F (S12L-80I/PF) microcontroller. The STC controls the two-axis solar tracker and is responsible for tracking the Sun.
 
 This repository contains tools intended to run on a local Raspberry Pi or other Linux system that has SSH access to a Gateway.
 
